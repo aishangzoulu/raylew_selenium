@@ -64,7 +64,7 @@ public class ShanBay {
             driver.get("https://www.shanbay.com/team/members/?page="+i+"#p1");
             List<WebElement> members = driver.findElements(By.tagName("tr").className("member"));
             for(WebElement member:members){
-                if(member.getText().contains("未打卡")){
+                if(member.getText().contains("not check")){
                     WebElement nickNameElement = member.findElement(By.tagName("a").className("nickname"));
                     String nickName=nickNameElement.getText();
                     if(!nickName.contains("^$")) {
