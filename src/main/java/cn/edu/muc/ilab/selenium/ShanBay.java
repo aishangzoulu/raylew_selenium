@@ -48,8 +48,8 @@ public class ShanBay {
 
     private static boolean loginShanBay(){
         List<WebElement> inputs= driver.findElements(By.tagName("input"));
-        inputs.get(0).sendKeys("E1225");
-        inputs.get(1).sendKeys("12wsbql25");
+        inputs.get(0).sendKeys("*****");
+        inputs.get(1).sendKeys("*****");
         List<WebElement> buttons = driver.findElements(By.tagName("button"));
         buttons.get(0).click();
         return true;
